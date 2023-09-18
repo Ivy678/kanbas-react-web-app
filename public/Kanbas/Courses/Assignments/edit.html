@@ -1,0 +1,143 @@
+<table width = "100%">
+    <tr>
+        <td valign="top">
+            <ul>
+                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                <li><a href="/Kanbas/Dashiboard/screen.html">Dashboard</a></li>
+                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                <li><a href="/Kanbas/Calendar/screen.html">Calendar</a></li>
+                <li><a href="/Kanbas/Inbox/screen.html">Inbox</a></li>
+                <li><a href="/Kanbas/History/screen.html">History</a></li>
+                <li><a href="/Kanbas/Studio/screen.html">Studio</a></li>
+                <li><a href="/Kanbas/Commons/screen.html">Commons</a></li>
+                <li><a href="/Kanbas/Help/screen.html">Help</a></li>
+            </ul>
+        </td>
+
+        <td valign="top">
+            <ul>
+                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+            </ul>
+        </td>
+        
+        <td valign="top">
+            <select>
+                <option>SpeedGrader</option>
+                <option>None</option>
+                <option>None</option>
+            </select>
+            <hr>
+            
+            <lable for="as"><h2>Assignment Name</h2></lable>
+            <input
+                type="text"
+                value="A1 - ENV + HTML" 
+                id="assignemtnName" 
+                placeholder="Assignment Name"
+            />
+            
+            <br /><br />
+            <textarea cols = "30" rows ="5">
+This is the assignemtn description.
+            </textarea>
+            <br /><br />
+            
+            <b>Points</b><br />
+            <input value="100" type="number" max="100" min="50" step="5"/>
+            <br /><br />
+            
+            <b>Assignment Group</b>
+            <br />
+            <select>
+                <option>ASSIGNMENTS</option>
+                <option>QUIZZES</option>
+                <option>EXAMS</option>
+            </select>
+            <br /><br />
+            
+            <b>Display Grades as</b>
+            <br />
+            <select>
+                <option>Percentage</option>
+                <option>Double</option>
+                <option>ABCD</option>
+            </select>
+            <br /><br />
+            
+            <b>Submission Type</b>
+            <br />
+            <select>
+                <option>Online</option>
+                <option>Paper</option>
+                <option>Git</option>
+            </select>
+            <br /><br />
+            
+            <b>Online Entry Options</b>
+            <br />
+            <input type="checkbox" id="textEntry" />
+            <label for="textEntry"> Text Entry</label><br/>
+            <label><input type="checkbox" /> website URL</label><br/>
+            <label><input type="checkbox" /> Media Recordings</label><br/>
+            <label><input type="checkbox" /> Student Annotation</label><br/>
+            <label><input type="checkbox" /> File Uploads</label><br/>
+            <br />
+            
+            <b>Submission Attempts</b>
+            <br />
+            <select>
+                <option>Unlimited</option>
+                <option>Once</option>
+                <option>Twice</option>
+            </select>
+            <br /><br />
+            
+            <b>Plagiarism Review</b>
+            <br />
+            <select>
+                <option>None</option>
+                <option>Unlimited</option>
+                <option>One</option>
+            </select>
+            <br /><br />
+            
+            <b>Group Assignment</b>
+            <br />
+            <label><input type="checkbox" /> This is a group assignment</label><br/>
+            <br />
+            
+            <b>Peer Reviews</b>
+            <br />
+            <label><input type="checkbox" /> Required Peer Reviews</label><br/>
+            <br />
+            
+            <b>Assign</b>
+            <br />
+            <b>Assign to</b>
+            <br />
+            <textarea clos = "50" rows ="5">
+            Everyone
+            </textarea>
+            <br /><br />
+            
+            <b>Due</b><br />
+            <input type="date" value="2021-01-01" min="2020-09-04" />
+            <br /><br />
+            
+            <b>Avaliable from</b><br />
+            <input type="date" value="2021-01-01" min="2020-09-04" />
+            <br /><br />
+            
+            <b>Until</b><br />
+            <input type="date" value="2021-01-01" min="2020-09-04" />
+            <br /><br />
+            <a href="/Kanbas/Courses/Assignments/screen.html"><button> Cancel</button></a>
+            <a href="/Kanbas/Courses/Assignments/screen.html"><button>Save</button></a>
+        
+        </td>
+    </tr>
+</table>
