@@ -1,0 +1,102 @@
+.wd-kannbas-assignment-dropdown{
+    padding-top: 5px !important; 
+    padding-bottom: 5px !important;
+
+}
+.wd-kannbas-assignment-button{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+.wd-kannbas-assignment-button2{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.wd-kannbas-assignment-button2 i{
+    color: black;
+}
+.list-group-item {
+    padding-left: 10px !important;
+}
+.list-group-item, .custom-item {
+    border-left: 5px solid green !important;
+}
+
+.list-group{
+    border-radius: 0 !important;
+}
+
+.list-group-item.font-weight-bold {
+    padding-left: 5px !important;
+}
+.list-group-item-secondary{
+    padding-left: 5px !important;
+    border-left: 0 !important;
+
+}
+.list-group-item a{
+    border-radius: 0 !important;
+    text-decoration: none;
+    color: black;
+}
+
+.custom-item {
+    position: relative;
+}
+
+.wd-kannbas-icon-plus {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 35px;
+}
+
+.wd-kanbas-assignmetn-percentage{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 60px;
+    border: solid 1px black;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.icon-check {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: green;
+    right: 35px;
+}
+
+.icon-ellipsis{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    right: 15px;
+}
+
+.list-group{
+    border-left: 2px !important;
+    border-color: green !important;
+}
+
+.wd-kannbas-assignment-content{
+    display: flex; 
+    align-items: center;
+}
+.wd-kanbas-assignments-icon{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.wd-kanbas-assignments-icon i{
+    color: green;
+    font-size: 1.2em;
+}
+.wd-kannbas-assignment-content h6,.wd-kannbas-assignment-content p{
+    margin-bottom: 0px
+}
+

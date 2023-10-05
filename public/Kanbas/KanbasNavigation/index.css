@@ -1,0 +1,40 @@
+
+
+
+
+
+
+.wd-kanbas-navigator{
+    background-color: black;
+    list-style: none;
+    padding: 0px;
+    width: 80px;
+}
+.wd-kanbas-navigator li{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.wd-kanbas-navigator a{
+    text-decoration: none;
+    color: white;
+}
+
+.wd-kanbas-navigator a i{
+    color: red;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.wd-kanbas-navigator li .wd-profile i{
+    color: white;
+}
+
+.wd-kanbas-navigator li.wd-active{
+    background-color: white;
+}
+
+.wd-kanbas-navigator li.wd-active a{
+    color: red;
+}

@@ -1,235 +1,352 @@
-<table width="100%">
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="/Kanbas/Calendar/screen.html">Calendar</a></li>
-                <li><a href="/Kanbas/Inbox/screen.html">Inbox</a></li>
-                <li><a href="/Kanbas/History/screen.html">History</a></li>
-                <li><a href="/Kanbas/Studio/screen.html">Studio</a></li>
-                <li><a href="/Kanbas/Commons/screen.html">Commons</a></li>
-                <li><a href="/Kanbas/Help/screen.html">Help</a></li>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+        <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/AssignmentEditor/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Account/AccountNavigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Account/Profile/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Account/Profile/ProfileEditor/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Grades/Settings/index.css" />
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    </head>
+<body>
+    <div class="wd-flex-row-container " >
+        <div style="background-color: black; min-height: 100vh; margin-right: 20px;">
+            <ul class="wd-kanbas-navigator" id="wd-kanbas-nav">
+                <li><a href=" ">
+                    <div><i class="fa-brands fa-neos"></i></div>
+                    </a >
+                </li>
+            
+                <li><a href="/Kanbas/Account/Profile/screen.html">
+                    <div >
+                        <i style="color: grey;" class="fa-solid fa-circle-user"></i>
+                    </div>Account</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html">
+                    <div>
+                        <i class="fa-regular fa-clipboard"></i>
+                    </div>
+                    Dashboard</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+                    <div>
+                        <i class="fa-regular fa-newspaper"></i>
+                    </div> Courses</a></li>
+                <li><a href="/Kanbas/Calendar/screen.html">
+                    <div>
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    Calendar</a></li>
+                <li><a href="/Kanbas/Inbox/screen.html">
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    Inbox</a></li>
+                <li><a href="/Kanbas/History/screen.html">
+                    <div><i class="fa-regular fa-clock"></i></div>
+                    History</a></li>
+                <li><a href="/Kanbas/Studio/screen.html">
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    Studio</a></li>
+                <li><a href="/Kanbas/Commons/screen.html">
+                    <div>
+                        <i class="fa-regular fa-folder-open"></i>
+                    </div>
+                    Commons</a></li>
+                <li><a href="/Kanbas/Help/screen.html">
+                    <div>
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                    Help</a></li>
             </ul>
-        </td>
+        </div>
 
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-            </ul>
-        </td>
-
-        <td valign="top">
-            <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"><button>Course Details</button></a>
-<a href="#"><button>Sections</button></a>
-<a href="/Kanbas/Courses/Settings/Navigation/screen.html"><button>Navigation</button></a>
-<a href="#"><button>Apps</button></a>
-<a href="#"><button>Feature Options</button></a>
-<a href="#"><button>Integration</button></a>
-            <h1>Course Details</h1>
-<table width="100%" >
-    <tbody>
-        <tr>
-            <td valign="top"><b>Image:</b></td>
-            <td>
-                <textarea></textarea>
-                <br />
-                <button>Choose Image</button>
-            </td>
-        </tr>
-        <tr>
-            <td><b>Name:</b></td>
-            <td>CS4550 12631 Web Development SEC 01 Fall 2023 [Bos-1-TR]</td>
-        </tr>
-        <tr>
-            <td><b>Course Code:</b></td>
-            <td>CS4550.12631.202410</td>
-        </tr>
-        <tr>
-            <td><b>Blueprint Course:</b></td>
-            <td>No</td>
-        </tr>
-        <tr>
-            <td><b>Course Template:</b></td>
-            <td>
-                <label>
-                    <input type="checkbox" /> Enable course as a Course Template
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <td><b>Time Zone:</b></td>
-            <td>
-                <select>
-                    <option>Eastern Time(US&Canada)(-05:00/-04:00)</option>
-                    <option>Weastern Time(US&Canada)(-05:00/-04:00)</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td><b>SIS ID:</b></td>
-            <td>CS4550.12631.202410</td>
-        </tr>
-        <tr>
-            <td><b>Subaccount:</b></td>
-            <td><a href="#">CS Undergrad</a></td>
-        </tr>
-        <tr>
-            <td><b>Term:</b></td>
-            <td>202410_1 Fall 2023 Semester Full Term</td>
-        </tr>
-        <tr>
-            <td valign="top"><b>Participation:</b></td>
-            <td>
-                <select>
-                    <option>Term</option>
-                    <option>Two Terms</option>
-                    <option>Semester</option>
-                </select>
-                <br /> <br />
-                Course Participation is limited to <b>term</b> start and end dates.
-                <br /><br />
-                <b>Start</b><br />
-                <input type="date" value="" min="2020-09-04" />
-                <br /><br />
-                <b>End</b><br />
-                <input type="date" value="" min="2020-09-04" />
-                <br /><br />
-                <label>
-                    <input type="checkbox" /> Restrict students from viewing course before term start date
-                </label>
-                <br />
-                <label>
-                    <input type="checkbox" /> Restrict students from viewing course after term start date
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top"><b>Default due time:</b></td>
-            <td>
-                <select>
-                    <option>Account default(11:59)</option>
-                    <option>Weastern Time(11:59)</option>
-                    <option>Eastern Time(11:59)</option>
-                </select>
-                <br />
-                This influences the user interface for setting due dates, it does not change the time due for any existiong assignments.
-            </td>
-        </tr>
-        <tr>
-            <td valign="top"><b>Language:</b></td>
-            <td>
-                <select>
-                    <option>Not set(user-configurable,defaults to English)</option>
-                    <option>English</option>
-                    <option>Spanish</option>
-                    <option>Chinese</option>
-                </select>
-                <br />
-                This will override any user/system language perferences. This is only recommended for foreign language courses.
-            </td>
-        </tr>
-        <tr>
-            <td><b>File Storage:</b></td>
-            <td>10000 megabytes</td>
-        </tr>
-        <tr>
-            <td><b>Large Courses:</b></td>
-            <td>
-                <label>
-                    <input type="checkbox" /> Launch SpeedGrader Filtered by Student Group
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <td><b>Grading Scheme:</b></td>
-            <td>
-                <label>
-                    <input type="checkbox" /> Enable course grading scheme
-                </label>
-            </td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td><b>License:</b></td>
-            <br />
-            <td>
-                <select>
-                    <option>Private (Copyrighted)</option>
-                    <option>Public</option>
-                    <option>Only to students</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td><b>File Copyright:</b></td>
-            <td>
-                <label>
-                    <input type="checkbox" /> Copyright and license information must be provided for files before they are published.
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top"><b>Visibility:</b></td>
-            <td>
-                If you need to make your course public please contact your administrator/support.
-                <select>
-                    <option>Course</option>
-                    <option>Assignment</option>
-                    <option>Grade</option>
-                </select>
-                <br />
-                <label>
-                    <input type="checkbox" /> Include this course in the public course index.
-                </label>
-            </td>
-        </tr>
-
-        <tr>
-            <td><b>Format:</b></td>
-            <br />
-            <td>
-                <select>
-                    <option>On-Campus</option>
-                    <option>Online</option>
-                    <option>Both</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td><b>Master Paths:</b></td>
-            <td>
-                <label>
-                    <input type="checkbox" /> Enable individual learning paths for students based on assessment
-                </label>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top"><b>Description:</b></td>
-            <td>
-                <textarea></textarea><br />
-                <a href="#">more options</a>
-            </td>
-        </tr>
-        <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
-        <tr>
-            <td></td>
-            <td>
-                <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"><button>Update Course Details</button></a>
-            </td>
-        </tr>
-
-</table>
+        
+        <div class="wd-flex-col-container wd-flex-grow-1" >
+            <div class="wd-account-profile-editor-title">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb" >
+                      <i class="fa-solid fa-bars" style="color: red; margin-right: 20px;"></i>
+                      <li class="breadcrumb-item" ><a href="#" class="setting-link" >CS5610.17367.202410</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                    </ol>
+                  </nav>
+                <hr>
+            </div>
 
 
-        </td>
+            <div class="wd-flex-row-container">
+                <div id="wd-kanbas-nav">
+                    <td valign="top">
+                        <ul class="wd-account-navigation ">
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                            <li><a href="/Kanbas/Courses/Pizza/screen.html">Pizza</a></li>
+                            <li><a href="/Kanbas/Courses/Zoom Meeting/screen.html">Zoom Meeting</a></li>
+                            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                            <li><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
+                            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                            <li><a href="/Kanbas/Courses/People/screen.html">People</a></li>
+                            <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+                            <li class="wd-active"><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                        </ul>
+                    </td>
+                </div>
 
-    </tr>
-</table>
+                <div class="wd-flex-grow-1" id="course-module">
+                    <div class="course-navbar">
+                        <div class="course-navbar-item navbar-active ">
+                            <a href="/Kanbas/Courses/Setting/CourseDetails/screen.html">Course Detail</a>
+                        </div>
+                        <div class="course-navbar-item">
+                            <a href="#">Sections</a>
+                        </div>
+
+                        <div class="course-navbar-item">
+                            <a href="/Kanbas/Courses/Setting/Navigation/screen.html">Navigation</a>
+                        </div>
+                        <div class="course-navbar-item">
+                            <a href="#">Apps</a>
+                        </div>
+                        <div class="course-navbar-item">
+                            <a href="#">Feature Options</a>
+                        </div>
+                        <div class="course-navbar-item">
+                            <a href="#">Integrations</a>
+                        </div>
+                    </div>
+
+                    <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"><button>Course Details</button></a>
+                    <a href="#"><button>Sections</button></a>
+                    <a href="/Kanbas/Courses/Settings/Navigation/screen.html"><button>Navigation</button></a>
+                    <a href="#"><button>Apps</button></a>
+                    <a href="#"><button>Feature Options</button></a>
+                    <a href="#"><button>Integration</button></a>
+                    
+                    <h1>Course Details</h1>
+                    <table class="table" width="100%">
+                        <tbody>
+                            <tr>
+                                <td valign="top"><b>Image:</b></td>
+                                <td>
+                                    <div class="input-group">
+                                        <textarea class="form-control custom-textarea"></textarea>
+                                    </div>
+                                    <button class="btn btn-primary">Choose Image</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Name:</b></td>
+                                <td>CS4550 12631 Web Development SEC 01 Fall 2023 [Bos-1-TR]</td>
+                            </tr>
+                            <tr>
+                                <td><b>Course Code:</b></td>
+                                <td>CS4550.12631.202410</td>
+                            </tr>
+                            <tr>
+                                <td><b>Blueprint Course:</b></td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td><b>Course Template:</b></td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" /> Enable course as a Course Template
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Time Zone:</b></td>
+                                <td>
+                                    <select>
+                                        <option>Eastern Time(US&Canada)(-05:00/-04:00)</option>
+                                        <option>Weastern Time(US&Canada)(-05:00/-04:00)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>SIS ID:</b></td>
+                                <td>CS4550.12631.202410</td>
+                            </tr>
+                            <tr>
+                                <td><b>Subaccount:</b></td>
+                                <td><a href="#" style="text-decoration: none; color: red;">CS Undergrad</a></td>
+                            </tr>
+                            <tr>
+                                <td><b>Term:</b></td>
+                                <td>202410_1 Fall 2023 Semester Full Term</td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><b>Participation:</b></td>
+                                <td>
+                                    <select>
+                                        <option>Term</option>
+                                        <option>Two Terms</option>
+                                        <option>Semester</option>
+                                    </select>
+                                    <br /> <br />
+                                    Course Participation is limited to <b>term</b> start and end dates.
+                                    <br /><br />
+                                    <b>Start</b><br />
+                                    <input type="date" value="" min="2020-09-04" />
+                                    <br /><br />
+                                    <b>End</b><br />
+                                    <input type="date" value="" min="2020-09-04" />
+                                    <br /><br />
+                                    <label>
+                                        <input type="checkbox" /> Restrict students from viewing course before term start date
+                                    </label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" /> Restrict students from viewing course after term start date
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><b>Default due time:</b></td>
+                                <td>
+                                    <select>
+                                        <option>Account default(11:59)</option>
+                                        <option>Weastern Time(11:59)</option>
+                                        <option>Eastern Time(11:59)</option>
+                                    </select>
+                                    <br />
+                                    This influences the user interface for setting due dates, it does not change the time due for any existiong assignments.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><b>Language:</b></td>
+                                <td>
+                                    <select>
+                                        <option>Not set(user-configurable,defaults to English)</option>
+                                        <option>English</option>
+                                        <option>Spanish</option>
+                                        <option>Chinese</option>
+                                    </select>
+                                    <br />
+                                    This will override any user/system language perferences. This is only recommended for foreign language courses.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>File Storage:</b></td>
+                                <td>10000 megabytes</td>
+                            </tr>
+                            <tr>
+                                <td><b>Large Courses:</b></td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" /> Launch SpeedGrader Filtered by Student Group
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Grading Scheme:</b></td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" /> Enable course grading scheme
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td><b>License:</b></td>
+                                <br />
+                                <td>
+                                    <select>
+                                        <option>Private (Copyrighted)</option>
+                                        <option>Public</option>
+                                        <option>Only to students</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>File Copyright:</b></td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" /> Copyright and license information must be provided for files before they are published.
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><b>Visibility:</b></td>
+                                <td>
+                                    If you need to make your course public please contact your administrator/support.
+                                    <select>
+                                        <option>Course</option>
+                                        <option>Assignment</option>
+                                        <option>Grade</option>
+                                    </select>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" /> Include this course in the public course index.
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><b>Format:</b></td>
+                                <br />
+                                <td>
+                                    <select>
+                                        <option>On-Campus</option>
+                                        <option>Online</option>
+                                        <option>Both</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Master Paths:</b></td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" /> Enable individual learning paths for students based on assessment
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><b>Description:</b></td>
+                                <td>
+                                    <textarea></textarea><br />
+                                    <a href="#">more options</a>
+                                </td>
+                            </tr>
+                            <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <a href="/Kanbas/Courses/Settings/CourseDetails/screen.html"><button>Update Course Details</button></a>
+                                </td>
+                            </tr>
+
+                    </table>
+
+
+
+
+
+            </div>
+
+
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
+
 
 

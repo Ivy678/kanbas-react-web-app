@@ -1,176 +1,272 @@
-<table width = "100%" >
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="/Kanbas/Calendar/screen.html">Calendar</a></li>
-                <li><a href="/Kanbas/Inbox/screen.html">Inbox</a></li>
-                <li><a href="/Kanbas/History/screen.html">History</a></li>
-                <li><a href="/Kanbas/Studio/screen.html">Studio</a></li>
-                <li><a href="/Kanbas/Commons/screen.html">Commons</a></li>
-                <li><a href="/Kanbas/Help/screen.html">Help</a></li>
-            </ul>
-        </td>
 
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+        <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/AssignmentEditor/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Account/AccountNavigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Account/Profile/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Account/Profile/ProfileEditor/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    </head>
+<body>
+    <div class="wd-flex-row-container " >
+        <div style="background-color: black; min-height: 100vh; margin-right: 20px;">
+            <ul class="wd-kanbas-navigator" id="wd-kanbas-nav">
+                <li><a href=" ">
+                    <div><i class="fa-brands fa-neos"></i></div>
+                    </a >
+                </li>
+            
+                <li><a href="/Kanbas/Account/Profile/screen.html">
+                    <div >
+                        <i style="color: grey;" class="fa-solid fa-circle-user"></i>
+                    </div>Account</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html">
+                    <div>
+                        <i class="fa-regular fa-clipboard"></i>
+                    </div>
+                    Dashboard</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+                    <div>
+                        <i class="fa-regular fa-newspaper"></i>
+                    </div> Courses</a></li>
+                <li><a href="/Kanbas/Calendar/screen.html">
+                    <div>
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    Calendar</a></li>
+                <li><a href="/Kanbas/Inbox/screen.html">
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    Inbox</a></li>
+                <li><a href="/Kanbas/History/screen.html">
+                    <div><i class="fa-regular fa-clock"></i></div>
+                    History</a></li>
+                <li><a href="/Kanbas/Studio/screen.html">
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    Studio</a></li>
+                <li><a href="/Kanbas/Commons/screen.html">
+                    <div>
+                        <i class="fa-regular fa-folder-open"></i>
+                    </div>
+                    Commons</a></li>
+                <li><a href="/Kanbas/Help/screen.html">
+                    <div>
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                    Help</a></li>
             </ul>
-        </td>
+        </div>
+
         
-        <td valign="top">
-            <select>
-                <option>Grade Book</option>
-                <option>Grade Scope</option>
-                <option>GPA</option>
-            </select>
-            
-            <button>Import</button>
-            
-            <select>
-                <option>Export</option>
-                <option>Grade Scope</option>
-                <option>GPA</option>
-            </select>
-            <button>configure</button>
-            
-            <table width = "100%">
-                <tr>
-                    <td><br /><b>Student Names</b><br />
-                        <input title="Type the name of the student to search for" 
-                        placeholder="Search Students"
-                        />
+        <div class="wd-flex-col-container wd-flex-grow-1" >
+            <div class="wd-account-profile-editor-title">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb" >
+                      <i class="fa-solid fa-bars" style="color: red; margin-right: 20px;"></i>
+                      <li class="breadcrumb-item" ><a href="#" class="setting-link" >CS5610.17367.202410</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                    </ol>
+                  </nav>
+                <hr>
+            </div>
+
+
+            <div class="wd-flex-row-container">
+                <div id="wd-kanbas-nav">
+                    <td valign="top">
+                        <ul class="wd-account-navigation ">
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                            <li><a href="/Kanbas/Courses/Pizza/screen.html">Pizza</a></li>
+                            <li><a href="/Kanbas/Courses/Zoom Meeting/screen.html">Zoom Meeting</a></li>
+                            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                            <li><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
+                            <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                            <li><a href="/Kanbas/Courses/People/screen.html">People</a></li>
+                            <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+                            <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                        </ul>
                     </td>
-                </tr>
-            
-                <tr>      
-                    <td><br /><b>Assignment Names</b><br />
-                        <input title="Type the name of the assignment to search for" 
-                        placeholder="Search Students"
-                        />
-                    </td>
-                </tr>
-            </table>
-            <br />
-            <button>Apply Filters</button>
-            <br />
-            
-            <table border="1" width="100%">
-                <thead>
-                    <tr>
-                        <th>Student Name</th>
-                        <th>A1 SETUP Out of 100</th>
-                        <th>A2 HTML Out of 100</th>
-                        <th>A3 CSS Out of 100</th>
-                        <th>A4 BOOTSTRAP Out of 100</th>
-                        <th>A5 JAVASCRIPT Out of 100</th>
-                        <th>A6 REACT Out of 100</th>
-                        <th>A7 REDUX Out of 100</th>
-                        <th>A8 NODE Out of 100</th>
-                        <th>A9 MONGE Out of 100</th>
-                        <th>Q1</th>
-                        <th>Q2</th>
-                        <th>Q3</th>
-                        <th>Q4</th>
-                        <th>Q5</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Alice Wonderland</td>
-                        <td>100%</td>
-                        <td>90%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>90%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>Princes Leia</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>85%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>Luke Skywalker</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>Han Solo</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                    </tr>
-                    <tr>
-                        <td>Lando Calresian</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                        <td>100%</td>
-                    </tr>
-                </tbody>
-                <tfoot></tfoot>
-            </table>            
-            
-        </td>
-    </tr>
-</table>
+                </div>
+
+                <div class="wd-flex-grow-1" id="course-module">
+
+                    <div class="module-buttons">
+                        <div class="float-end">
+                            <button type="button" class="btn btn-light rounded-0 kanbas-button">
+                                <i class="fa-solid fa-file-import"></i> Import</button>
+                            <button type="button" class="btn btn-light rounded-0 kanbas-button">
+                                <i class="fa-solid fa-file-import"></i> Export <i class="fa-solid fa-angle-down"></i></button>
+                            <button type="button" class="btn btn-light text-dark rounded-0 kanbas-button2">
+                                <i class="fa-solid fa-gear"></i></button>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="exampleFormControlInput1" class="form-label" style="font-weight: bold;">Student Names</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" 
+                            placeholder="Search Studetns">
+                        </div>
+                        
+                        <div class="col-6" style="margin-bottom: 10px;">
+                            <label for="exampleFormControlInput1" class="form-label" style="font-weight: bold;">Assignments Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" 
+                            placeholder="Search Assignments">
+                        </div>
+                    </div>
+                    
+
+                    <div>
+                        <button type="button" class="btn btn-light text-dark rounded-0 kanbas-button2" style="margin-bottom: 10px;">
+                            <i class="fa-solid fa-filter"></i>Apply Filters</button>
+                    </div>
+
+
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered grades-table">
+                            
+                            <tbody>
+                                <tr>
+                                    <th>Student Name</th>
+                                    <th>A1 SETUP Out of 100</th>
+                                    <th>A2 HTML Out of 100</th>
+                                    <th>A3 CSS Out of 100</th>
+                                    <th>A4 BOOTSTRAP Out of 100</th>
+                                    <th>A5 JAVASCRIPT Out of 100</th>
+                                    <th>A6 REACT Out of 100</th>
+                                    <th>A7 REDUX Out of 100</th>
+                                    <th>A8 NODE Out of 100</th>
+                                    <th>A9 MONGE Out of 100</th>
+                                    <th>Q1</th>
+                                    <th>Q2</th>
+                                    <th>Q3</th>
+                                    <th>Q4</th>
+                                    <th>Q5</th>
+                                </tr>
+
+
+                                <tr>
+                                    <td><a href="#">Wonderland</a></td>
+                                    <td>100%</td>
+                                    <td>90%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>90%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Princes Leiad</a></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>85%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Luke Skywalker</a></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Han Solor</a></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Lando Calresian</a></td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                </tr>
+
+                            </tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </div>
+
+
+
+            </div>
+
+
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
+
+
+

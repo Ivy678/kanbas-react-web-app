@@ -1,0 +1,95 @@
+
+.input-group {
+    margin-bottom: 10px;
+}
+.custom-textarea {
+    color: red;
+    text-decoration: none;
+}
+.custom-label {
+    margin-top: 10px;
+}
+.custom-checkbox {
+    margin-bottom: 10px;
+}
+
+.course-navbar {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.course-navbar-item {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    border-bottom: 1px solid gray ;
+}
+
+
+
+.course-navbar-item a,.row a {
+    text-decoration: none;
+    color: red;
+}
+
+
+.course-navbar-item a:hover {
+    color: gray; 
+}
+
+.navbar-active{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: none;
+}
+.navbar-active a{
+    text-decoration: none;
+    color: black;
+}
+
+.form-control-static {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+.form-control {
+    width: 50% !important;
+}
+
+
+.list-group-item, .custom-item {
+    border-left: 0.666667px solid rgb(222, 226, 230) !important;
+}
+
+.image-upload-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.choose-image-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* This will hide the default input file */
+.d-none {
+    display: none;
+}
+
+
+

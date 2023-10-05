@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css" />
+        <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/Kanbas/Account/AccountNavigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Account/Profile/ProfileEditor/index.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wd-flex-row-container" >
+        <div style="background-color: black; min-height: 100vh; margin-right: 20px">
+            <ul class="wd-kanbas-navigator">
+                <li><a href=" ">
+                    <div><i class="fa-brands fa-neos"></i></div>
+                    </a >
+                </li>
+            
+                <li><a href="/Kanbas/Account/Profile/screen.html">
+                    <div>
+                        <i style="color: grey;" class="fa-regular fa-user"></i>
+                    </div>Account</a></li>
+                <li class="wd-active"><a href="/Kanbas/Dashboard/screen.html">
+                    <div>
+                        <i class="fa-regular fa-clipboard"></i>
+                    </div>
+                    Dashboard</a></li>
+                <li><a href="/Kanbas/Courses/Home/screen.html">
+                    <div>
+                        <i class="fa-regular fa-newspaper"></i>
+                    </div> Courses</a></li>
+                <li><a href="/Kanbas/Calendar/screen.html">
+                    <div>
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    Calendar</a></li>
+                <li><a href="/Kanbas/Inbox/screen.html">
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    Inbox</a></li>
+                <li><a href="/Kanbas/History/screen.html">
+                    <div><i class="fa-regular fa-clock"></i></div>
+                    History</a></li>
+                <li><a href="/Kanbas/Studio/screen.html">
+                    <div>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    Studio</a></li>
+                <li><a href="/Kanbas/Commons/screen.html">
+                    <div>
+                        <i class="fa-regular fa-folder-open"></i>
+                    </div>
+                    Commons</a></li>
+                <li><a href="/Kanbas/Help/screen.html">
+                    <div>
+                        <i class="fa-regular fa-thumbs-up"></i>
+                    </div>
+                    Help</a></li>
+            </ul>
+        </div>
+        <div class="wd-flex-col-container wd-flex-grow-1" >
+            <div class="wd-account-profile-editor-title">
+                <div>
+                    <i class="fa-solid fa-bars" style="color: red; margin-right: 20px;"></i>
+                    Zichuan Zhu's Profile<hr>
+                </div>
+            </div>
+            
+            <div class="wd-flex-row-container">
+                <div>
+                    <td valign="top">
+                        <ul class="wd-account-navigation ">
+                            <li><a href="#">Notification</a></li>
+                            <li class="wd-active"><a href="/Kanbas/Account/Profile/screen.html">Profile</a></li>
+                            <li><a href="#">files</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">ePortfolios</a></li>
+                            <li><a href="#">Shared Content</a></li>
+                            <li><a href="#">The Hub</a></li>
+                            <li><a href="#">Qwickly Course Tools</a></li>
+                            <li><a href="#">Global Announcements</a ></li>
+                        </ul>
+                    </td>
+                </div>
+                <div class="wd-flex-grow-1" >
+                    
+                    <div style="font-size: 150px;">
+                        <i style="color: grey;" class="fa fa-user" aria-hidden="true"></i>
+                        
+                    </div>
+                    
+                    <td valign="top">
+
+                    <div class="mb-3">
+                        <label for="inputName1" class="form-label" style="font-weight: bold;">Name:*</label><br/>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Zichuan Zhu">
+                    </div>
+                
+
+                    <div class="mb-3">
+                        <label for="ipronouns" class="form-label" style="font-weight: bold;">Pronouns:</label><br/>
+                        <select>
+                            <option>None</option>
+                            <option>English</option>
+                            <option>Chinese</option>
+                        </select>
+                        <br /><br />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inpuTitle" class="form-label" style="font-weight: bold;">Title</label><br/>
+                        <input type="text" class="form-control" id="titleInput" placeholder="">
+                    </div>
+                    <br/>
+
+                    <div>
+                        <h2>Contact</h2>
+                        <div>
+                            No registerd services, you can add some on the <a href="#" class="setting-link">seetings</a> page.
+                        </div>
+                    </div>
+                    <br/>
+                    
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"><h2>Biography</h2></label><br>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+Faculty, Softerware Engineer, AI, Space, and renewables enthusiast.
+                        </textarea>
+                    </div>
+
+                    
+                    <br />
+                    <h2 style="margin-bottom: 0px;">Links</h2>
+                    <br />
+
+                        <div class="container text-center">
+                            <div class="row row-align-items-center">
+                                <div class="col">
+                                    <div class="text-center"><strong>Title</strong></div>
+                                    <input type="text" class="form-control" placeholder="YouTube">
+                                </div>
+                                <div class="col-1"><i style="margin-top: 20px" class="fa-solid fa-arrow-right"></i></div>
+                                <div class="col">
+                                    <div class="text-center"><strong>URL</strong></div>
+                                    <input type="text" class="form-control" placeholder="https://www.youtube.com/watch?v=yvv13q691bE">
+                                </div>
+                                <div class="col-1"><a href=" "><i style="margin-top: 20px; color: red" class="fa-solid fa-xmark"></i></a ></div>
+                            </div>
+                          </div>
+
+                    <button type="button" class="btn btn-light" style="border: 0.5px solid #ccc; margin-top: 5px;">Add another link</button><hr>
+                    <br />
+                    <div class="center-button">
+                        <a href="/Kanbas/Account/Profile/screen.html">
+                            <button type="button" class="btn btn-light" style="border: 0.5px solid #ccc;" >Cancel</button>
+                        </a>
+                        &nbsp;
+                        <a href="/Kanbas/Account/Profile/screen.html">
+                            <button type="button" class="btn btn-light" style="background-color: red; color: white; border: 0.5px;">Save Profile</button>
+                        </a>
+                    </div>
+                    
+                    <br />
+                                
+                    </td>
+                </div>
+                
+                    <div>
+                        <a href="/Kanbas/Account/Profile/screen.html">
+                            <button type="button" class="btn btn-light;" style="border: 0.5px solid #ccc;">
+                                <i class="fa-solid fa-pencil" ></i> Cancel Editing</button>
+                        </a>
+                    </div>
+                
+    </div>
+</body>
+</html>

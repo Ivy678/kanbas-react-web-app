@@ -1,0 +1,68 @@
+.wd-kanbas-assignment-editor{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.submission{
+    border: solid 1px grey;
+    padding: 10px;
+}
+
+.assign{
+    border: solid 1px grey;
+    padding: 10px;
+}
+
+
+
+.entry{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.form-check{
+    margin-bottom: 20px !important;
+}
+
+
+.tag-holder{
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 0.5px rgb(213, 219, 225);
+}
+
+.button{
+    margin: 5px;
+}
+.button i{
+    margin-left: 10px;
+}
+
+.assign-entry{
+    width: 100%;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.col-6{
+    padding: 0px !important;
+}
+
+.assign-entry2{
+    width: 100%;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.list-group-item-secondary{
+    text-align: center !important;
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+
+}
