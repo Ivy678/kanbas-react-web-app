@@ -52,7 +52,7 @@
     right: 35px;
 }
 
-.wd-kanbas-assignmetn-percentage{
+.wd-kanbas-assignment-percentage{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -60,7 +60,6 @@
     border: solid 1px black;
     padding-left: 5px;
     padding-right: 5px;
-
 }
 
 .icon-check {
