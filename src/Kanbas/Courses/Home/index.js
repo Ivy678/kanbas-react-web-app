@@ -1,4 +1,5 @@
 import ModuleList from "../Modules/ModuleList";
+import CourseStatus from "../CourseStatus";
 
 
 function Home() {
@@ -10,6 +11,7 @@ function Home() {
         </div>
         <div className="col-2">
             <h2>Status</h2>
+            <CourseStatus />
         </div>
     </div>
   );
