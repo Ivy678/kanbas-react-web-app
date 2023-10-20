@@ -1,0 +1,30 @@
+table a{
+    color: red;
+    text-decoration: none;
+}
+
+.bordered-table {
+    border-collapse: collapse; 
+    border: 2pc;
+  }
+  
+  .bordered-table th, .bordered-table td {
+    border: 1px solid black; 
+  }
+  .list-group{
+    border-radius: 0 !important;
+}
+
+.list-group-item.font-weight-bold {
+    padding-left: 5px !important;
+}
+.list-group-item-secondary{
+    padding-left: 5px !important;
+    border-left: none !important;
+
+}
+.list-group-item a{
+    border-radius: 0 !important;
+    text-decoration: none;
+    color: red;
+}

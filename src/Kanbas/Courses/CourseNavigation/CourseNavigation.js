@@ -1,22 +1,24 @@
-function CourseNavigation(active) {
-    const links = [
-      { name: "Home", url: "/Kanbas/Courses/Home/screen.html" },
-      { name: "Modules", url: "/Kanbas/Courses/Modules/screen.html" },
-      { name: "Assignments", url: "/Kanbas/Courses/Assignments/screen.html" },
-      { name: "Grades", url: "/Kanbas/Courses/Grades/screen.html" },
-    ];
-    return `
-    <ul class="wd-course-navigation">
-      ${links
-        .map(
-          (link) =>
-            `<li class="${link.name === active ? "wd-active" : ""}"><a href="${
-              link.url
-            }">${link.name}</a></li>`
-        )
-        .join("")}
-    </ul>
-  `;
-  }
-  
-  export default CourseNavigation;
+import { Link, useParams, useLocation } from "react-router-dom";
+import "./index.css";
+
+function CourseNavigation() {
+  const links = ["Home", "Modules", "Assignments", "Grades"];
+  const { courseId } = useParams();
+  const { pathname } = useLocation();
+  return (
+    
+    <div className="wd-course-navigation list-group" style={{ width: 150 }}>
+      {links.map((link, index) => (
+        <Link
+          key={index}
+          to={`/Kanbas/Courses/${courseId}/${link}`}
+          className={`list-group-item ${pathname.includes(link) && "active"}`}
+        >
+          {link === "Home" ? `${link} (${courseId})` : link}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+export default CourseNavigation;

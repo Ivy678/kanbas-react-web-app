@@ -31,9 +31,9 @@
 .list-group-item {
     padding-left: 50px !important;
 }
-.list-group-item, .custom-item {
+/* .list-group-item, .custom-item {
     border-left: 5px solid green !important;
-}
+} */
 
 .list-group{
     border-radius: 0 !important;

@@ -27,6 +27,7 @@ function Courses() {
           }}
         >
           <Routes>
+            <Route path="Courses/:courseId/*" element={<Courses />} />
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />
             <Route path="Modules" element={<Modules/>} />
