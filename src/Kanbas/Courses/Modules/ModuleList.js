@@ -6,7 +6,7 @@ import "./index.css";
 function ModuleList() {
   const { courseId } = useParams();
   const modules = db.modules;
-  const [expandedModule, setExpandedModule] = useState(null);
+const [expandedModule, setExpandedModule] = useState(null);
 
   return (
     <div className="kanbas-module">
@@ -29,46 +29,33 @@ function ModuleList() {
       </div>
       <hr />
 
-      <ul className="list-group">
-        {
-          modules
-           .filter((module) => module.course === courseId)
-           .map((module, index) => (
-             <li key={index} className="list-group-item">
-               <h3 onClick={() => setExpandedModule(module.id)}>
-                 {module.name}
-               </h3>
-               
-               {/* Conditionally render module details based on expandedModule state */}
-               {expandedModule === module.id && (
-                 <>
-                   <p>{module.description}</p>
-                   {
-                      module.lessons && (
-                          <ul className="list-group">
-                              {
-                                  module.lessons.map((lesson, index) => (
-                                      <li key={index} className="list-group-item">
-                                          <h4>{lesson.name}</h4>
-                                          <p>{lesson.description}</p>
-                                      </li>
-                                  ))
-                              }
-                          </ul>
-                      )
-                   }
-                 </>
-               )}
-             </li>
-          ))
-        }
-      </ul>
+    <ul className="list-group">
+      {
+        modules
+         .filter((module) => module.course === courseId)
+         .map((module, index) => (
+           <li key={index} className="list-group-item">
+             <h3>{module.name}</h3>
+             <p>{module.description}</p>
+             {
+                module.lessons && (
+                    <ul className="list-group">
+                        {
+                            module.lessons.map((lesson, index) => (
+                                <li key={index} className="list-group-item">
+                                    <h4>{lesson.name}</h4>
+                                    <p>{lesson.description}</p>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                )
+             }
+           </li>
+      ))
+      }
+    </ul>
     </div>
   );
 }
 export default ModuleList;
-
-
-
-
-
