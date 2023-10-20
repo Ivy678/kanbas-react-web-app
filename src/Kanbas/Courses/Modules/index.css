@@ -239,3 +239,53 @@
 .wd-nav-item:hover {
     background-color: #f5f5f5;
 }
+
+.list-container {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: #F5F5F5;
+    padding: 12px 12px 12px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 42px;
+    overflow: hidden;
+}
+.list-container .title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.list-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.kanbas-module-button {
+    padding: 6px 12px !important;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    background: #F5F5F5;
+    margin: 0 8px;
+    font-size: 16px;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+.kanbas-module-button:hover {
+    opacity: 0.7;
+}
+.kanbas-module-button:active {
+    opacity: 0.9;
+}
+.kanbas-module-button.small {
+    padding: 6px 8px !important;
+}
+
+.kanbas-module-button.red {
+    background-color: #ff0000;
+    color: #fff;
+}

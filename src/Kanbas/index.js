@@ -8,7 +8,7 @@ function Kanbas() {
   return (
     <div className="d-flex">
       <KanbasNavigation />
-      <div>
+      <div className="full-width">
         <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
           <Route path="Account" element={<Account />} />

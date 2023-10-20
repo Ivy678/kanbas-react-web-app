@@ -1,0 +1,16 @@
+.assignments-course {
+  border: 1px solid #eee;
+}
+.assignments-course-content {
+  border-left: 4px solid #0f8f0f;
+}
+.assignments-course-header {
+  padding: 16px 8px;
+  background-color: #F5F5F5;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #eee;
+}
+.assignments-course .list-item {
+  border-bottom: 1px solid #eee;
+  padding: 16px 8px;
+}
