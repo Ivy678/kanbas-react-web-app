@@ -81,21 +81,16 @@ function ModuleList() {
         {modules
           .filter((module) => module.course === courseId)
           .map((module, index) => (
-            <li key={index} className="list-container ">
-              <div className="list-item-container ">
-              <span className="iconfont icon-drag font-size-2xl mr-3xs"></span>
-              <span className="iconfont icon-arrow-right-filling font-size-md mr-3xs cur-pointer"></span>
-              <div className="title">{module.name}</div>
-                <div>
-                  <button className="btn btn-success"
-                    onClick={() => dispatch(setModule(module))}>
-                    Edit
-                  </button>
-
-                  <button className="btn btn-danger"
-                    onClick={() => dispatch(deleteModule(module._id))}>
-                    Delete
-                  </button>
+            <li key={index} className="list-container">
+              <div className="list-item-container d-flex justify-content-between align-items-center w-100">
+                <div className="d-flex align-items-center">
+                  <span className="iconfont icon-drag font-size-2xl mr-3xs"></span>
+                  <span className="iconfont icon-arrow-right-filling font-size-md mr-3xs cur-pointer"></span>
+                  <div className="title ml-2">{module.name}</div>
+                </div>
+                <div className="d-flex align-items-center">
+                  <button className="btn btn-success" onClick={() => dispatch(setModule(module))}>Edit</button>
+                  <button className="btn btn-danger ml-2" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
                 </div>
               </div>
               <div className="list-item-container">
@@ -103,7 +98,6 @@ function ModuleList() {
                 <span className="iconfont icon-arrow-down-filling font-size-md mx-xs cur-pointer"></span>
                 <span className="iconfont icon-add font-size-md mx-md cur-pointer"></span>
                 <span className="iconfont icon-more font-size-md mr-3xs cur-pointer"></span>
-                
               </div>
             </li>
           ))}
