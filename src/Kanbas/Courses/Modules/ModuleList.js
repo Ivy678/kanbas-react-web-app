@@ -2,11 +2,23 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import "./index.css";
+import { useSelector, useDispatch } from "react-redux";
+
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
+
   const [expandedModule, setExpandedModule] = useState(null);
+  
 
   return (
     <div className="kanbas-module flex-grow-1 mx-md">
@@ -42,22 +54,58 @@ function ModuleList() {
       <hr />
 
       <ul className="list-group mx-md">
+        
+        <li className="list-group-item d-flex align-items-center">
+          <div className="flex-grow-1">
+            <div className="mb-2">
+              <input value={module.name}
+                onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
+              />
+            </div>
+            <div>
+              <textarea value={module.description}
+                onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))
+              }
+              />
+            </div>
+          </div>
+
+          <div>
+            <button className="btn btn-success" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+            <button className="btn btn-primary" onClick={() => dispatch(updateModule(module))}>
+                  Update
+            </button>
+          </div>
+        </li>
+        
         {modules
           .filter((module) => module.course === courseId)
           .map((module, index) => (
-            <div key={index} className="list-container">
-              <div className="list-item-container">
+            <li key={index} className="list-container ">
+              <div className="list-item-container ">
               <span className="iconfont icon-drag font-size-2xl mr-3xs"></span>
               <span className="iconfont icon-arrow-right-filling font-size-md mr-3xs cur-pointer"></span>
-                <div className="title">{module.name}</div>
+              <div className="title">{module.name}</div>
+                <div>
+                  <button className="btn btn-success"
+                    onClick={() => dispatch(setModule(module))}>
+                    Edit
+                  </button>
+
+                  <button className="btn btn-danger"
+                    onClick={() => dispatch(deleteModule(module._id))}>
+                    Delete
+                  </button>
+                </div>
               </div>
               <div className="list-item-container">
                 <span className="iconfont icon-success font-size-2xl text-green mr-3xs cur-pointer"></span>
                 <span className="iconfont icon-arrow-down-filling font-size-md mx-xs cur-pointer"></span>
                 <span className="iconfont icon-add font-size-md mx-md cur-pointer"></span>
                 <span className="iconfont icon-more font-size-md mr-3xs cur-pointer"></span>
+                
               </div>
-            </div>
+            </li>
           ))}
       </ul>
     </div>
