@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.woff2?t=1697796181978') format('woff2'),
+       url('iconfont.woff?t=1697796181978') format('woff'),
+       url('iconfont.ttf?t=1697796181978') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e664";
+}
+
+.icon-data-view:before {
+  content: "\e66a";
+}
+
+.icon-drag:before {
+  content: "\e66d";
+}
+
+.icon-export:before {
+  content: "\e66f";
+}
+
+.icon-filter:before {
+  content: "\e672";
+}
+
+.icon-import1:before {
+  content: "\e675";
+}
+
+.icon-notification:before {
+  content: "\e679";
+}
+
+.icon-search:before {
+  content: "\e67d";
+}
+
+.icon-success:before {
+  content: "\e67f";
+}
+
+.icon-arrow-down-filling:before {
+  content: "\e688";
+}
+
+.icon-arrow-right-filling:before {
+  content: "\e689";
+}
+
+.icon-setting-filling:before {
+  content: "\e68b";
+}
+
+.icon-check-circle:before {
+  content: "\e77d";
+}
+
+.icon-glasses:before {
+  content: "\e631";
+}
+
+.icon-more:before {
+  content: "\e607";
+}
+
+.icon-Import1:before {
+  content: "\eaac";
+}
+
+.icon-alarm:before {
+  content: "\e7b8";
+}
+
+.icon-keyboard:before {
+  content: "\e612";
+}
+
+.icon-edit:before {
+  content: "\e66e";
+}
+
+.icon-piechart_2:before {
+  content: "\e677";
+}
+
+.icon-location:before {
+  content: "\e629";
+}
+

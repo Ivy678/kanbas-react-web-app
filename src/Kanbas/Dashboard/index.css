@@ -1,0 +1,32 @@
+.wd-kanbas-dashboard-title{
+    font-size: 1.5rem;
+}
+
+.wd-kanbas-dashboard{
+    padding-left: 20px;
+}
+
+.card-icon-1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+
+.card-icon-{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: black;
+}
+
+.custom-link{
+    text-decoration: none;
+}
+
+.card-color {
+    background-color: lightblue; 
+    width: 100%;  
+    height: 200px;  
+    display: block;
+  }
