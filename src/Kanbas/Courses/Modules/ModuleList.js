@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import "./index.css";
@@ -9,15 +9,50 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
 
+import * as client from "./client";
+import { findModulesForCourse, createModule } from "./client";
+
+
 function ModuleList() {
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
+
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
 
   const [expandedModule, setExpandedModule] = useState(null);
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
   
 
   return (
@@ -71,8 +106,8 @@ function ModuleList() {
           </div>
 
           <div>
-            <button className="btn btn-success" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
-            <button className="btn btn-primary" onClick={() => dispatch(updateModule(module))}>
+            <button className="btn btn-success" onClick={handleAddModule}>Add</button>
+            <button className="btn btn-primary" onClick={handleUpdateModule}>
                   Update
             </button>
           </div>
@@ -90,7 +125,7 @@ function ModuleList() {
                 </div>
                 <div className="d-flex align-items-center">
                   <button className="btn btn-success" onClick={() => dispatch(setModule(module))}>Edit</button>
-                  <button className="btn btn-danger ml-2" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+                  <button className="btn btn-danger ml-2" onClick={() => handleDeleteModule(module._id)}>Delete</button>
                 </div>
               </div>
               <div className="list-item-container">

@@ -1,13 +1,14 @@
-import db from "../Database";
-import { React, useState } from "react";
+// import db from "../Database";
+import { useParams } from "react-router-dom";
+import { React, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./index.css";
 import ReactImage from '../../images/react.png';
+import axios from "axios";
 
 
-function Dashboard({courses, course, setCourse, addNewCourse,
-  deleteCourse, updateCourse }
-) {
+function Dashboard({courses, course, setCourse, addCourse,
+  deleteCourse, updateCourse }) {
   // const [courses, setCourses] = useState(db.courses);
   // const [course, setCourse] = useState({
   //   name: "New Course",      number: "New Number",
@@ -37,6 +38,10 @@ function Dashboard({courses, course, setCourse, addNewCourse,
   const handleGo = (id) => {
     navigate(`/Kanbas/Courses/${id}`)
   }
+  
+
+  
+
 
 
   return (
@@ -51,7 +56,7 @@ function Dashboard({courses, course, setCourse, addNewCourse,
              onChange={(e) => setCourse({ ...course, startDate: e.target.value }) }/>
       <input value={course.endDate} className="form-control" type="date"
              onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
-      <button className="btn btn-success" onClick={addNewCourse} >
+      <button className="btn btn-success" onClick={addCourse} >
         Add
       </button>
       <button className="btn btn-primary" onClick={updateCourse} >
@@ -90,7 +95,7 @@ function Dashboard({courses, course, setCourse, addNewCourse,
                 <button className="btn btn-danger"
                   onClick={(event) => {
                     event.preventDefault();
-                    deleteCourse(course._id);
+                    deleteCourse(course);
                   }}>
                   Delete
                 </button>
