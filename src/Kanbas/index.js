@@ -11,7 +11,7 @@ import axios from "axios";
 import { useEffect } from "react";
 
 function Kanbas() {
-  const URL = "http://localhost:4000/api/courses";
+  const URL = "https://kanbas-node-server-app-rcwd.onrender.com/api/courses";
   
 
   const [courses, setCourses] = useState(db.courses);
