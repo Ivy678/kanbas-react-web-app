@@ -1,43 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
 import "./course.css";
-import { useSelector, useDispatch } from "react-redux";
-
-import {
-  addAssignment, 
-  deleteAssignment, 
-  updateAssignment, 
-  setAssignment, 
-  setAssignments
-} from "./assignmentsReducer";
-
-import { findAssignmentsForCourse, createAssignment } from "./client";
 
 function Assignments() {
   const { courseId } = useParams();
+  const assignments = db.assignments;
   const courseAssignments = assignments.filter((assignment) => assignment.course === courseId);
-
-  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
-  const assignment = useSelector((state) => state.assignmentsReducer.assignment);
-  const dispatch = useDispatch();
-
-  const [expandedModule, setExpandedModule] = useState(null);
-
-  const handleAddAssignment = () => {
-    createAssignment(courseId, assignment).then((assignment) => {
-      dispatch(addAssignment(assignment));
-    });
-  };
-
-
-  useEffect(() => {
-    findAssignmentsForCourse(courseId)
-      .then((assignments) =>
-        dispatch(setAssignments(assignments))
-    );
-  }, [courseId]);
-
   return (
     <div className="flex-grow-1">
       <div className="flex justify-between items-center">
