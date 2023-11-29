@@ -2,9 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     assignments: [],
-    assignment: { name: "New Assignment 234",
+    assignment: { title: "New Assignment 234",
               description: "New Description" },
   };
+  
   const assignmentsSlice = createSlice({
     name: "assignments",
     initialState,

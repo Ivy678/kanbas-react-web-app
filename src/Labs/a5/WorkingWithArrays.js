@@ -22,7 +22,7 @@ function WorkingWithArrays() {
     //     });
     // };
 
-    const TODO_API = "http://localhost:4000/a5/todos";
+    const TODO_API = "https://kanbas-node-server-app-rcwd.onrender.com/a5/todos";
 
     const createTodo = async () => {
         const response = await axios.get(`${TODO_API}/create`);
@@ -31,7 +31,7 @@ function WorkingWithArrays() {
     
 
     const fetchTodos = async () => {
-        const response = await axios.get("http://localhost:4000/a5/todos");
+        const response = await axios.get("https://kanbas-node-server-app-rcwd.onrender.com/a5/todos");
         setTodos(response.data);
     };
 

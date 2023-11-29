@@ -1,6 +1,6 @@
 import axios from "axios";
 const COURSES_URL = "https://kanbas-node-server-app-rcwd.onrender.com/api/courses";
-const MODULES_URL = "https://kanbas-node-server-app-rcwd.onrender.com/api/courses";
+const MODULES_URL = "https://kanbas-node-server-app-rcwd.onrender.com/api/modules";
 
 export const updateModule = async (module) => {
     const response = await axios.
